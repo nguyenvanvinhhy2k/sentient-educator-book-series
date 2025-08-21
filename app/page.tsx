@@ -1,6 +1,5 @@
 "use client";
 import FlipBook from "./FlipBook";
-import anhnen from "../app/images/anhnen.jpg"
 
 export default function Home() {
 
