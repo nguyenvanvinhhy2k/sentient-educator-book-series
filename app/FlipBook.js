@@ -35,7 +35,7 @@ const FlipBook = () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center h-[100vh] w-full sm1:w-[78%] lg1:w-[33.7%] xl1:w-[37.5%] 2xl1:w-[30%] m-auto  px-[50px] sm1:px-0">
+    <div className="flex flex-col items-center justify-center h-[100vh] w-full sm1:w-[78%] lg1:w-[29.7%] xl1:w-[29.6%] 2xl1:w-[30%] m-auto  px-[50px] sm1:px-0">
       <div className="w-full h-[468px] promax:h-[496px] pixel:h-[569px] sm1:h-[87%] md1:h-[81%] lg1:h-[90%] shadow-2xl relative perspective-[1500px]">
         {pages.map((page, index) => (
           <div
