@@ -35,12 +35,12 @@ const FlipBook = () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center h-[100vh] w-full sm:w-[78%] lg:w-[31%] xl:w-[30%] m-auto  px-[50px] sm:px-0">
-      <div className="w-full h-[435px] sm:h-[87%] md:h-[81%] lg:h-[90%] shadow-2xl relative">
+    <div className="flex flex-col items-center justify-center h-[100vh] w-full sm1:w-[78%] lg1:w-[33.7%] xl1:w-[37.5%] 2xl1:w-[30%] m-auto  px-[50px] sm1:px-0">
+      <div className="w-full h-[440px] promax:h-[496px] pixel:h-[569px] sm1:h-[87%] md1:h-[81%] lg1:h-[90%] shadow-2xl relative perspective-[1500px]">
         {pages.map((page, index) => (
           <div
             key={index}
-            className={`absolute w-full h-full bg-white flex flex-col justify-center items-center text-sm sm:text-xl transition-transform duration-1000 ease-in-out shadow-lg origin-left rounded-l-[10px] sm:rounded-l-[15px] rounded-r-[15px] sm:rounded-r-[25px] overflow-hidden
+            className={`absolute w-full h-full bg-white flex flex-col justify-center items-center text-sm sm1:text-xl transition-transform duration-1000 ease-in-out shadow-lg origin-left rounded-l-[10px] sm1:rounded-l-[15px] rounded-r-[15px] sm1:rounded-r-[25px] overflow-hidden
             ${index < currentPage ? "-rotate-y-180" : "rotate-y-0"}`}
             style={{ zIndex: pages.length - index, backfaceVisibility: "hidden" }}>
             <img

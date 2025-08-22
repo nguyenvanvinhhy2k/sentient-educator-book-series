@@ -8,6 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        // 'ippro': {'min': '339px'},
+        'promax': {'min': '429px'},
+        'pixel':  {'min': '479px'},
+        'sm1': {'min': '640px'},
+        'md1': {'min': '768px'},
+        'lg1': {'min': '1024px'},
+        'xl1': {'min': '1280px'},
+        '2xl1': {'min': '1600px'},
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
