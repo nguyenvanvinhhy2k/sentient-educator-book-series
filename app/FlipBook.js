@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import anhbia from "../app/images/anhbiaupdate.jpg"
 import trang1 from "../app/images/trang1up.jpg"
 import trang2 from "../app/images/trang2upd.jpg"
+import trang3 from "../app/images/trang3.jpg"
+import trang4 from "../app/images/trang4.jpg"
 import trangcuoi from "../app/images/endend.jpg"
 import next from "../app/images/next-removebg-preview.png"
 // import musicFile from "@/assets/music.mp3";
@@ -12,6 +14,8 @@ const FlipBook = () => {
     { img: anhbia, text: "Trang 1: Giới thiệu" },
     { img: trang1, text: "Trang 2: Nội dung chương 1" },
     { img: trang2, text: "Trang 3: Nội dung chương 2" },
+    { img: trang3, text: "Trang 2: Nội dung chương 3" },
+    { img: trang4, text: "Trang 3: Nội dung chương 4" },
     { img: trangcuoi, text: "Trang 4: Kết luận" },
   ];
 
@@ -25,7 +29,7 @@ const FlipBook = () => {
   // console.log('AUDIO_SRC', AUDIO_SRC)
 
   const nextPage = () => {
-    if (currentPage < pages.length && currentPage < 3) setCurrentPage(currentPage + 1);
+    if (currentPage < pages.length && currentPage < 5) setCurrentPage(currentPage + 1);
   };
 
   const prevPage = () => {
