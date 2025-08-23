@@ -26,10 +26,12 @@ const FlipBook = () => {
   const [currentPage, setCurrentPage] = useState(0);
   // console.log('first', mp3)
   // const AUDIO_SRC = mp3
-  // console.log('AUDIO_SRC', AUDIO_SRC)
+  // console.log('AUDIO_SRC', AUDIO_SRC
+  console.log('cur', currentPage)
 
   const nextPage = () => {
-    if (currentPage < pages.length && currentPage < 5) setCurrentPage(currentPage + 1);
+    if (currentPage < pages.length && currentPage <= 5) setCurrentPage(currentPage + 1);
+    if (currentPage === 5) setCurrentPage(currentPage === 0);
   };
 
   const prevPage = () => {
@@ -57,12 +59,12 @@ const FlipBook = () => {
 
         
         {/* Nút Prev */}
-        <button onClick={prevPage} className={`${currentPage === 0 && "hidden"} absolute top-1/2 left-[-45px] sm:left-[-90px] -translate-y-1/2 p-2 sm:px-4 rounded bg-transparent hover:scale-95 duration-300`}>
+        <button onClick={prevPage} className={`${(currentPage === 0 || currentPage == false) && "hidden"} absolute top-1/2 left-[-45px] sm:left-[-90px] -translate-y-1/2 p-2 sm:px-4 rounded bg-transparent hover:scale-95 duration-300`}>
           <img className="h-8 w-8 sm:h-12 sm:w-8 md:h-16 md:w-16 rotate-180" src={next.src} alt="Prev"/>
         </button>
 
         {/* Nút Next */}
-        <button onClick={nextPage} className={`${currentPage === pages.length - 1 && "hidden"} absolute top-1/2 right-[-45px] sm:right-[-90px] -translate-y-1/2 p-2 sm:px-4 rounded bg-transparent hover:scale-95 duration-300`}>
+        <button onClick={nextPage} className={` absolute top-1/2 right-[-45px] sm:right-[-90px] -translate-y-1/2 p-2 sm:px-4 rounded bg-transparent hover:scale-95 duration-300`}>
           <img className="h-8 w-8 sm:h-12 sm:w-8 md:h-16 md:w-16" src={next.src} alt="Next"/>
         </button>
       </div>
