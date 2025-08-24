@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import anhbia from "../app/images/anhbiaupdate.jpg"
-import trang1 from "../app/images/trang1up.jpg"
-import trang2 from "../app/images/trang2upd.jpg"
-import trang3 from "../app/images/trang3.jpg"
+import trang1 from "../app/images/p1.jpg"
+import trang2 from "../app/images/p2.jpg"
+import trang3 from "../app/images/p3.jpg"
 import trang4 from "../app/images/trang4.jpg"
 import trang5 from "../app/images/trang5.jpg"
 import trang6 from "../app/images/trang6.jpg"
