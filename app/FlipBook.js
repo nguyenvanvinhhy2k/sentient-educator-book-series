@@ -6,6 +6,8 @@ import trang3 from "../app/images/p3.jpg"
 import trang4 from "../app/images/trang4.jpg"
 import trang5 from "../app/images/trang5.jpg"
 import trang6 from "../app/images/trang6.jpg"
+import trang7 from "../app/images/p7.jpg"
+import trang8 from "../app/images/p8.jpg"
 import trangcuoi from "../app/images/endend.jpg"
 import next from "../app/images/next-removebg-preview.png"
 // import musicFile from "@/assets/music.mp3";
@@ -20,6 +22,8 @@ const FlipBook = () => {
     { img: trang4, text: "Trang 3: Nội dung chương 4" },
     { img: trang5, text: "Trang 2: Nội dung chương 5" },
     { img: trang6, text: "Trang 3: Nội dung chương 6" },
+    { img: trang7, text: "Trang 2: Nội dung chương 7" },
+    { img: trang8, text: "Trang 3: Nội dung chương 8" },
     { img: trangcuoi, text: "Trang 4: Kết luận" },
   ];
 
@@ -34,8 +38,8 @@ const FlipBook = () => {
   console.log('cur', currentPage)
 
   const nextPage = () => {
-    if (currentPage < pages.length && currentPage <= 7) setCurrentPage(currentPage + 1);
-    if (currentPage === 7) setCurrentPage(currentPage === 0);
+    if (currentPage < pages.length && currentPage <= 9) setCurrentPage(currentPage + 1);
+    if (currentPage === 9) setCurrentPage(currentPage === 0);
   };
 
   const prevPage = () => {
