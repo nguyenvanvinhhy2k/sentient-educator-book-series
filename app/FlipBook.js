@@ -14,12 +14,10 @@ import trang11 from "../app/images/p11.jpg"
 import trang12 from "../app/images/p12.jpg"
 import trang13 from "../app/images/p13.jpg"
 import trang14 from "../app/images/p14.jpg"
-import trang15 from "../app/images/15.jpg"
-import trang16 from "../app/images/16.jpg"
+import trang15 from "../app/images/p15.jpg"
+import trang16 from "../app/images/p16.jpg"
 import trangcuoi from "../app/images/endend.jpg"
 import next from "../app/images/next-removebg-preview.png"
-// import musicFile from "@/assets/music.mp3";
-// import mp3 from "../app/images/dream-of-peace-chill-background-music-271248.mp3"
 
 const FlipBook = () => {
   const pages = [
