@@ -18,6 +18,8 @@ import trang15 from "../app/images/p15.jpg"
 import trang16 from "../app/images/p16.jpg"
 import trang17 from "../app/images/p17.jpg"
 import trang18 from "../app/images/p18.jpg"
+import trang19 from "../app/images/p19.jpg"
+import trang20 from "../app/images/p20.jpg"
 import trangcuoi from "../app/images/endend.jpg"
 import next from "../app/images/next-removebg-preview.png"
 
@@ -42,6 +44,8 @@ const FlipBook = () => {
     { img: trang16, text: "Trang 3: Nội dung chương 16" },
     { img: trang17, text: "Trang 2: Nội dung chương 17" },
     { img: trang18, text: "Trang 3: Nội dung chương 18" },
+    { img: trang19, text: "Trang 2: Nội dung chương 19" },
+    { img: trang20, text: "Trang 3: Nội dung chương 20" },
     { img: trangcuoi, text: "Trang 4: Kết luận" },
   ];
 
@@ -56,8 +60,8 @@ const FlipBook = () => {
   console.log('cur', currentPage)
 
   const nextPage = () => {
-    if (currentPage < pages.length && currentPage <= 19) setCurrentPage(currentPage + 1);
-    if (currentPage === 19) setCurrentPage(currentPage === 0);
+    if (currentPage < pages.length && currentPage <= 21) setCurrentPage(currentPage + 1);
+    if (currentPage === 21) setCurrentPage(currentPage === 0);
   };
 
   const prevPage = () => {
