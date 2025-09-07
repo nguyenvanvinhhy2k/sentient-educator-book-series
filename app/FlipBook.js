@@ -26,6 +26,10 @@ import trang23 from "../app/images/p23.jpg"
 import trang24 from "../app/images/p24.jpg"
 import trang25 from "../app/images/p25.jpg"
 import trang26 from "../app/images/p26.jpg"
+import trang27 from "../app/images/p27.jpg"
+import trang28 from "../app/images/p28.jpg"
+import trang29 from "../app/images/p29.jpg"
+import trang30 from "../app/images/p30.jpg"
 import trangcuoi from "../app/images/endend.jpg"
 import next from "../app/images/next-removebg-preview.png"
 
@@ -58,6 +62,10 @@ const FlipBook = () => {
     { img: trang24, text: "Trang 3: Nội dung chương 24" },
     { img: trang25, text: "Trang 2: Nội dung chương 25" },
     { img: trang26, text: "Trang 3: Nội dung chương 26" },
+    { img: trang27, text: "Trang 2: Nội dung chương 27" },
+    { img: trang28, text: "Trang 3: Nội dung chương 28" },
+    { img: trang29, text: "Trang 2: Nội dung chương 29" },
+    { img: trang30, text: "Trang 3: Nội dung chương 30" },
     { img: trangcuoi, text: "Trang 4: Kết luận" },
   ];
 
@@ -72,8 +80,8 @@ const FlipBook = () => {
   console.log('cur', currentPage)
 
   const nextPage = () => {
-    if (currentPage < pages.length && currentPage <= 27) setCurrentPage(currentPage + 1);
-    if (currentPage === 27) setCurrentPage(currentPage === 0);
+    if (currentPage < pages.length && currentPage <= 31) setCurrentPage(currentPage + 1);
+    if (currentPage === 31) setCurrentPage(currentPage === 0);
   };
 
   const prevPage = () => {
